@@ -4,9 +4,11 @@
 * Developing custom filters
 * Learning the context parameter of the jQuery() function
 
-jQuery-селекторы полностью совместимы с CSS3.
+:::tip Селекторы
+jQuery-селекторы полностью совместимы с CSS3. [Изучите](https://learn.javascript.ru/css-selectors) CSS-селекторы как следует.
+:::
 
-Переменные с объектами jQuery нужно именовать так:
+Переменные с объектами jQuery нужно именовать с префиксом `$`, чтобы отличать jQuery-объекты от обычных DOM-объектов (которые могут быть выбраны, например, через `document.querySelectorAll()`:
 
 ```js
 let $allElements = $('*'); // доллар-префикс
@@ -77,9 +79,6 @@ $("a[href!='http://jquery.com']") // все ссылки, кроме http://jque
 Можно использовать несколько атрибутов: `input[type="text"][required]`.
 * [Селекторы атрибутов](https://learn.javascript.ru/css-selectors#селекторы-атрибутов)
 
-## Стандарт
-* [Селекторы CSS3, спецификация](https://www.w3.org/TR/css3-selectors/#selectors)
-
 ## 2.5 Introducing filters (псевдоклассы CSS + бонусы jQuery)
 ### 2.5.1 Position filters
 Фильтры из jQuery (нет в CSS):
@@ -97,10 +96,7 @@ $("a[href!='http://jquery.com']") // все ссылки, кроме http://jque
 В фильтрах, которые дает jQuery, индексы начинаются с `0`. В фильтрах из спецификации CSS индексы идут с `1`.
 
 ### 2.5.2 Child filters
-`eq` работает только с выборкой по селектору, `nth-child` работает *со всеми элементами внутри родителя, независимо от их типа, даже если в селекторе они не указаны*. См. [`./examplesselectors_example.html`](/examplesselectors_example.html), пример `nth-child vs eq`.
-
-* https://learn.javascript.ru/css-selectors#фильтр-по-месту-среди-соседей
-* https://learn.javascript.ru/css-selectors#фильтр-по-месту-среди-соседей-с-тем-же-тегом
+`eq` работает только с выборкой по селектору, `nth-child` работает *со всеми элементами внутри родителя, независимо от их типа, даже если в селекторе они не указаны*. См. [`./examples/selectors_example.html`](./examples/selectors_example.html), пример `nth-child vs eq`.
 
 ### 2.5.3 Form filters
 Выбрать чекнутые чекбоксы: `$('input[type="checkbox"]:checked')`. Нужно использовать именно CSS-псевдокласс `:checked`.
@@ -131,6 +127,7 @@ $("a[href!='http://jquery.com']") // все ссылки, кроме http://jque
 
 ### 2.5.5 Other filters
 jQuery-фильтры (нет в CSS):
+
 * Visibility: `:hidden`, `:visible`
 * Обратить селектор: `input:not(:checkbox)`.
 * `:animated` — элементы в процессе анимации

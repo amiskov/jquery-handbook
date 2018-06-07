@@ -1,16 +1,20 @@
-# 10 Talk to the server with Ajax
+# 10. Talk to the server with Ajax
 * A brief overview of Ajax
 * Loading preformatted HTML from the server   Making GET and POST requests
 * Exerting fine-grained control over requests
 * Setting default Ajax properties
 * Handling Ajax events
 
+:::warning Синтаксис
+В коде проектов используйте полный синтаксис [`$.ajax`](https://learn.jquery.com/ajax/jquery-ajax-methods/) вместо сокращений `$.get()`, `$.post()` и `.load()` пр. Во-первых, код будет однообразный, во-вторых удобно изменять/добавлять свойства и методы и в третьих, практически всегда сокращений не достаточно для определения всех параметров запроса.
+:::
+
 Термин Ajax (for Asynchronous JavaScript and XML) предложил Jesse James Garrett из Adaptive Path в 2005-м году.
 
 ## 10.1 Brushing up on Ajax
 Аяксовый запрос использует конструктор `XMLHttpRequest` (XHR) или Microsoft XMLHTTP ActiveX control под капотом. Такие запросы позволяют отправлять и получать информацию с сервера без перезагрузки страницы.
 
-![](ajax_scheme.png)
+![](./ajax_scheme.png)
 
 Спецификация XHR: https://xhr.spec.whatwg.org
 
