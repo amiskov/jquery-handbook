@@ -108,6 +108,7 @@
 ## Манипуляция элементами страницы
 ### Материалы
 - [Оживление страниц](https://oggetto-academy.github.io/jquery-handbook/ch05/)
+- [setTimeout и setInterval](https://learn.javascript.ru/settimeout-setinterval)
 
 ### Вопросы
 1. Как добавить/удалить класс у коллекции?
