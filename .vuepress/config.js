@@ -15,8 +15,7 @@ module.exports = {
                 'ch05/',
                 'ch10/',
                 'ch11/',
-                'ch13/',
-                'events.md'
+                'ch13/'
             ]
         },
         ]
