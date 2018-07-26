@@ -9,7 +9,7 @@
 - [The jQuery Object](https://learn.jquery.com/using-jquery-core/jquery-object/)
 
 ### Вопросы
-1. Что такое `$()`?
+1. Что такое `$`?
 
 ## Поиск элементов, коллекции
 ### Материалы
